@@ -2,3 +2,6 @@
 
 this is a publish-from-md-to-email-web-and-zine project
 meant to share a playlist of music with friends
+
+TODO:
+- set up ECS deployment action in github
