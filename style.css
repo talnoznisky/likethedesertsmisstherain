@@ -1,0 +1,35 @@
+body {
+  font-family: 'Lora', serif;
+  font-size: 2vw;
+  background-color: #c2b280;
+  white-space: pre-line;
+  height: 100vh;
+  overflow: hidden;
+}
+.textBox {
+  animation: textBox 30s infinite linear;
+  padding: 2vw;
+  color: white;
+  /* cubic-bezier(0.3, 0.41, 1, 1) */
+  text-align: center;
+  transform: translateY(100%);
+  margin: 100px;
+}
+
+@keyframes textBox {
+    0% {
+      transform:translateY(80%)
+    }
+    100% {
+      transform:translateY(-105%)
+    }
+}
+
+@media only screen
+and (min-width-screen: 320px)
+and (max-width-screen: 480px){
+  p {
+    font-size: 3vw;
+  }
+
+}
