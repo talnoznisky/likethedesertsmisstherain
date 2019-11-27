@@ -1,22 +1,51 @@
-body {
-  font-family: 'Lora', serif;
-  font-size: 2vw;
-  background-color: #c2b280;
-  white-space: pre-line;
-  height: 100vh;
-  overflow: hidden;
-}
-.textBox {
-  animation: textBox 30s infinite linear;
-  padding: 2vw;
-  color: white;
-  /* cubic-bezier(0.3, 0.41, 1, 1) */
-  text-align: center;
-  transform: translateY(100%);
-  margin: 100px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes textBox {
+html {
+    height: 100vh;
+    /* overflow: hidden; */
+    color: white;
+}
+
+ body {
+  font-family: 'Lora', serif;
+  font-size: 3vw;
+  background-color: pink;
+  white-space: pre-line;
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top:0;
+  height: 17vh;
+  width: 100vw;
+  text-align: center;
+  display: block;
+  background-color: white;
+  color: pink;
+  z-index: 1;
+}
+
+.header h4 {
+    width:100%;
+    overflow-x: hidden;
+    clear: both;
+}
+
+.lyrics {
+  animation: lyrics 20s infinite linear;
+  color: white;
+  text-align: center;
+  text-justify: inter-word;
+  transform: translateY(100%);
+  z-index: -1;
+}
+
+
+@keyframes lyrics {
     0% {
       transform:translateY(80%)
     }
@@ -25,11 +54,15 @@ body {
     }
 }
 
-@media only screen
-and (min-width-screen: 320px)
-and (max-width-screen: 480px){
-  p {
-    font-size: 3vw;
+@media  screen
+and (min-width: 320px)
+and (max-width: 480px)
+{
+  body {
+    font-size: 5vw;
+    background-color: pink;
   }
-
+  .header {
+    height: 8vh;
+  }
 }
