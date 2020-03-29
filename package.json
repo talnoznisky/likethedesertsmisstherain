@@ -1,0 +1,23 @@
+{
+  "name": "likethedeserts",
+  "version": "1.0.0",
+  "description": "playlist-hosting app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talnoznisky/likethedesertsmisstherain.git"
+  },
+  "author": "tal noznisky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talnoznisky/likethedesertsmisstherain/issues"
+  },
+  "homepage": "https://github.com/talnoznisky/likethedesertsmisstherain#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
